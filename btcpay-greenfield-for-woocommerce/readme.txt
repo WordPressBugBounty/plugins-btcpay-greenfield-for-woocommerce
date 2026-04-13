@@ -5,7 +5,7 @@ Tags: Bitcoin, Lightning Network, BTCPay Server, WooCommerce, payment gateway
 Requires at least: 5.9
 Tested up to: 6.9
 Requires PHP: 8.0
-Stable tag: 2.7.4
+Stable tag: 2.7.5
 License: MIT
 License URI: https://github.com/btcpayserver/woocommerce-greenfield-plugin/blob/master/license.txt
 
@@ -110,12 +110,19 @@ You'll find extensive documentation and answers to many of your questions on [BT
 
 == Upgrade Notice ==
 
-= 2.7.4 =
-* Fix: Make sure modal checkout event handler does not get attached multiple times
-* Maintenance: Update NodeJS and dependencies to v20
-
+= 2.7.5 =
+* Fix: Refunds: remove XMR from payment methods to not break refunds
+* Fix: Blocks checkout: Improve blocks checkout detection
+* Fix: Blocks checkout: Allow re-trigger on abort
+* Fix: Blocks checkout: Ensure customer data form validation can't get skipped
 
 == Changelog ==
+= 2.7.5 :: 2026-04-13 =
+* Fix: Refunds: remove XMR from payment methods to not break refunds
+* Fix: Blocks checkout: Improve blocks checkout detection
+* Fix: Blocks checkout: Allow re-trigger on abort
+* Fix: Blocks checkout: Ensure customer data form validation can't get skipped
+
 = 2.7.4 :: 2026-03-26 =
 * Fix: Make sure modal checkout event handler does not get attached multiple times
 * Maintenance: Update NodeJS and dependencies to v20
